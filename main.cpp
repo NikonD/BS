@@ -5,15 +5,6 @@
 
 using namespace std;
 
-int main(int argc, char const *argv[]) {
-    cout << AtributBold << GreenText << endl;
-    BOT Bot;
-    PLR Plr;
-    title_screen();
-    autoset_ship(Plr, Bot);
-    cout << AtributNone << DefaultColor << endl;
-    return 0;
-}
 
 void title_screen() {
     system("clear");
@@ -86,4 +77,14 @@ void autoset_ship(PLR &plr, BOT &bot) {
             cin >> ch;
             break;
     }
+}
+
+int main(int argc, char const *argv[]) {
+    cout << AtributBold << GreenText << endl;
+    BOT Bot;
+    PLR Plr;
+    title_screen();
+    autoset_ship(Plr, Bot);
+    cout << AtributNone << DefaultColor << endl;
+    return 0;
 }
