@@ -1,10 +1,10 @@
-SHIP: 0	1-7 | 2-7 | 3-7 | 4-7 | 
-SHIP: 1	9-4 | 9-5 | 9-6 | 
-SHIP: 2	1-0 | 2-0 | 3-0 | 
-SHIP: 3	7-4 | 7-5 | 
-SHIP: 4	2-4 | 2-5 | 
-SHIP: 5	7-1 | 7-2 | 
-SHIP: 6	5-0 | 
-SHIP: 7	8-9 | 
-SHIP: 8	5-9 | 
-SHIP: 9	9-1 | 
+SHIP: 0	
+SHIP: 1	
+SHIP: 2	
+SHIP: 3	
+SHIP: 4	
+SHIP: 5	
+SHIP: 6	
+SHIP: 7	
+SHIP: 8	
+SHIP: 9	

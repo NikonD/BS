@@ -41,14 +41,14 @@
 #define GreyBG 					  "\033[47m"
 #define DefaultBG 			      "\033[49m"
 
-//Atributs
+//Atributes
 
-#define AtributNone 			"\033[0m"
-#define AtributBold 			"\033[1m"
-#define AtributNormalColorSet 	"\033[2m"
-#define AtributUnderline 	    "\033[4m"
-#define AtributBlink 			"\033[5m"
-#define AtributReverse 		    "\033[7m"
+#define AtributeNone 			"\033[0m"
+#define AtributeBold 			"\033[1m"
+#define AtributeNormalColorSet 	"\033[2m"
+#define AtributeUnderline 	    "\033[4m"
+#define AtributeBlink 			"\033[5m"
+#define AtributeReverse 		    "\033[7m"
 
 //Cancel
 

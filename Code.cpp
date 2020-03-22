@@ -70,7 +70,6 @@ void  MainClass::set_ship_with_size(int  size, char  field[][FIELD_DIM], TypeShi
         /*set field*/
         for(size_t j = col_left; j < col_left + size; ++j)
         {
-
             c_s.x=j;
             c_s.y=row_top;
             c_s.crash=false;
@@ -78,7 +77,7 @@ void  MainClass::set_ship_with_size(int  size, char  field[][FIELD_DIM], TypeShi
             //cin.get();
             field[row_top][j] = SHIP_SYMB;
             //print_field(field);
-            ships[iter_ships].RecordCarr(c_s);
+            // ships[iter_ships].RecordCarr(c_s); //error!!!
             c_s.x=0;
             c_s.y=0;
         }
@@ -93,7 +92,7 @@ void  MainClass::set_ship_with_size(int  size, char  field[][FIELD_DIM], TypeShi
             //cin.get();
             field[i][col_left] = SHIP_SYMB;
             //print_field(field);
-            ships[iter_ships].RecordCarr(c_s);
+            // ships[iter_ships].RecordCarr(c_s);
             c_s.x=0;
             c_s.y=0;
         }    
@@ -124,7 +123,7 @@ void  MainClass::set_ships(char  field[][FIELD_DIM]) {
 }
 /////////////////////////////////////////////////////////////////////////////////////////
 void  MainClass::print_field(const char  field[][FIELD_DIM]) {
-    cout << "  0 1 2 3 4 5 6 7 8 9" << endl;
+    cout << GreenText << "  0 1 2 3 4 5 6 7 8 9"  << endl;
     for(int  i = 0; i < FIELD_DIM; ++i) {
         cout << i << " ";
         for(int  j = 0; j < FIELD_DIM; ++j) {
@@ -159,7 +158,7 @@ void PLR::AutoSetShip() {
   srand(time(0));
   set_water    (field);
   set_ships    (field);
-  print_field  (field);
+  print_field  (field);          
   Copy();
 }
 
@@ -234,7 +233,7 @@ void Game(PLR &plr , BOT &bot) {
     bot.create_file("bot.shp");
     //bot.create_file();
     int x , y;
-    while ((plr.TrueStep!=20) || (bot.TrueStep!=20)) {
+    while ((plr.TrueStep<20) || (bot.TrueStep<20)) {
         cout << "START GAME!!!\n";
         do {
             system("clear");
